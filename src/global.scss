@@ -24,3 +24,24 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-header{
+
+    --ion-background-color: #b2cfe2;    
+}
+
+.modal-page-design {
+    --width: 170px;
+    --height: 170px;
+    --min-width: 170px;
+    --max-width: 170px;
+    --min-height: 170px;
+    --max-height: 170px;
+    --overflow: auto;
+    --border-radius: 85px;
+    --box-shadow: 0 11px 15px -7px rgba(227 255 114), 0 24px 38px 3px rgba(210 205 205 / 0% ),
+        0 9px 46px 8px rgba(0 0 0 / 0%);
+    .modal-wrapper {
+        margin: 12px;
+    }
+}

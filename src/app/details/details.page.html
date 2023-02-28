@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title>
+      <div style="display: flex; align-items: center; ">
+        <ion-icon name="chevron-back-outline" class="headericon" style=" margin-right: 7px;"
+          (click)="back()"></ion-icon>
+        <h2 style="margin: 0px; font-size: 18px;">Details</h2>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card class="first">
+    <!-- <img alt="Silhouette of mountains" [src]="user.image" /> -->
+    <img alt="Silhouette of mountains" [src]="user.image" />
+    <ion-card-header>
+      <ion-card-title style="font-size: large;">{{user.firstName+" "+user.maidenName+ "
+        "+user.lastName}}</ion-card-title>
+      <ion-card-subtitle>email - {{user.email}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{user.userAgent}}
+    </ion-card-content>
+
+  </ion-card>
+  <ion-card class="second">
+    <ion-card-header>
+      <ion-card-title>Address</ion-card-title>
+      <ion-card-subtitle>{{user.address.address+" "+user.address.city+" "+user.address.state}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{user.company.department+" "+user.company.name+" "+user.company.title}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

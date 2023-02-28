@@ -25,3 +25,27 @@
 #container a {
   text-decoration: none;
 }
+
+.new-background-color {
+  --background: #33870f;
+}
+ion-content {
+  --ion-background-color: #d9f8e2;
+}
+ion-item.ionselectshow {
+  --background: none;
+  --border-style: none;
+  color: black;
+}
+
+ion-icon {
+  color: black;
+}
+img {
+  border: 2px solid #a09751;
+}
+
+ion-icon.headericon {
+  color: #eac9ee;
+  font-size: 35px;
+}

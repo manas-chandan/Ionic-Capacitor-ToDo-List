@@ -1,20 +1,26 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
+  <ion-toolbar class="new-background-color">
+    <ion-title >
+      <div style="display: flex; align-items: center;justify-content: center; ">
+        <!-- <ion-icon name="list-circle-sharp" class="headericon" style=" margin-right: 7px;"></ion-icon> -->
+        <h2 style="margin: 0px; font-size: 18px; font-family:'cursive'; ">ToDoList Capacitor</h2>
+      </div> 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+
+  <ion-item class="ionselectshow" *ngFor="let item of userList">
+    <ion-avatar slot="start">
+      <img alt="Silhouette of a person's head" [src]="item.image" />
+    </ion-avatar>
+    <ion-label (click)="onClickDetails(item)" style="font-family:'cursive';">
+      {{item.firstName +" "+ item.lastName}}
+    </ion-label>
+    <h6 style="font-family:'cursive';">{{item.age}}</h6>
+  </ion-item>
+
 </ion-content>
